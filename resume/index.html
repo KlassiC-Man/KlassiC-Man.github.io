@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+      integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let circle = document.getElementById("circle");
+        const onMouseMove = (e) => {
+          circle.style.left = e.pageX + "px";
+          circle.style.top = e.pageY + "px";
+        };
+        document.addEventListener("mousemove", onMouseMove);
+        let knowMore = document.getElementById("knowMore");
+        knowMore.onclick = () => {
+          window.scrollTo({
+            top: 960,
+            behavior: "smooth",
+          });
+        };
+        const typed = new Typed("#head-grad", {
+          strings: ["", "", "Parth Gulati."],
+          typeSpeed: 70,
+        });
+        setTimeout(() => {
+          const typer = new Typed(".full-stack", {
+            strings: ["", "", "I am a full-stack dev."],
+            typeSpeed: 70,
+          });
+        }, 1000);
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="h-[100vh]">
+      <div class="flex flex-row justify-center p-28 pb-5">
+        <div class="flex flex-col text-center">
+          <img
+            src="https://pbs.twimg.com/profile_images/1499455922908778501/2biNaK3m_400x400.jpg"
+            class="h-36 w-36 rounded-full mx-auto mb-5"
+            alt=""
+          />
+          <h1 class="text-[#9C7A97] font-semibold text-xl">HI, MY NAME IS</h1>
+          <h1 id="head-grad" class="font-bold text-8xl mt-2">Parth Gulati.</h1>
+          <h1 id="head-grad" class="full-stack font-bold text-8xl mt-0"></h1>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center">
+        <div class="text-center max-w-2xl">
+          <h3 class="text-[#d5d5d5] text-2xl" id="desc">
+            I love to build fabulous UI/UX's and also solve arithmetic and
+            logical problems 👨‍💻. I also like to eat Pancakes and yeah that's
+            pretty much everything...
+          </h3>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center mt-10">
+        <div
+          class="bg-[#4c1ddb] font-semibold text-lg p-4 rounded-3xl text-[#d5d5d5]"
+          id="knowMore"
+        >
+          Want To Know More?
+        </div>
+      </div>
+      <div class="flex flex-row justify-center">
+        <div class="flex flex-row justify-evenly mt-7 w-96">
+          <a href="https://twitter.com/programmer010">
+            <i class="fa-brands fa-twitter text-3xl text-white"></i>
+          </a>
+          <a href="https://dev.to/nothingbutsyntaxerror">
+            <i class="fa-brands fa-dev text-3xl text-white"></i>
+          </a>
+          <a href="https://github.com/nothingbutsyntaxerror">
+            <i class="fa-brands fa-github text-3xl text-white"></i>
+          </a>
+          <a href="mailto:parthglt@gmail.com">
+            <i class="fa-solid fa-envelope text-3xl text-white"></i>
+          </a>
+          <a href="https://discord.com/users/716323270982631476">
+            <i class="fa-brands fa-discord text-3xl text-white"></i>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <img src="./layered-waves-haikei.svg" alt="" class="w-[100vw]" />
+    <section class="flex flex-col justify-between">
+      <div class="flex flex-row justify-center">
+        <div class="neu-proj p-5 flex flex-row h-[100%]">
+          <div class="flex-1 bg-transparent text-gray-800">
+            <h1 class="bg-transparent text-4xl font-semibold mb-5">
+              Reddit Clone
+            </h1>
+            <p class="bg-transparent text-lg">
+              Remember that old cool platform, reddit? This is a clone of it...
+              It has the complete capability to create a new post, edit an
+              existing post, delete a post, and upvote/downvote a post. It also
+              has user avatars and profiles fully customisable.
+            </p>
+            <div class="flex flex-row bg-transparent mt-10">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+                alt=""
+                class="h-14 w-20 bg-transparent"
+              />
+              <img
+                src="https://typescript-react-graphql.herokuapp.com/static/media/typeS.5c70a1d2.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-5"
+              />
+              <img
+                src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png"
+                alt=""
+                class="h-14 w-14 bg-transparent ml-5"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/1280px-Tailwind_CSS_logo.svg.png"
+                alt=""
+                class="h-9 w-30 bg-transparent ml-5"
+              />
+            </div>
+          </div>
+          <div class="bg-transparent">
+            <img
+              src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/10/reddit-2119159.jpg?itok=jdXDzv5M"
+              alt=""
+              class="bg-transparent rounded-md ml-10"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center mt-10">
+        <div class="neu-proj p-5 flex flex-row h-[100%]">
+          <div class="flex-1 bg-transparent text-gray-800">
+            <h1 class="bg-transparent text-4xl font-semibold mb-5">
+              Airbnb Clone
+            </h1>
+            <p class="bg-transparent text-lg">
+              Airbnb is a platform for people to rent out their homes and
+              apartments and the same way this clone uses React and Maps API to
+              show the the homes across United Kingdom. It also has a search and
+              a live map layout... and a lot more.
+            </p>
+            <div class="flex flex-row bg-transparent mt-10">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+                alt=""
+                class="h-14 w-20 bg-transparent"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-7"
+              />
+              <img
+                src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Maps_Pin_FullColor.max-1000x1000.png"
+                alt=""
+                class="h-14 w-14 bg-transparent ml-5"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/1280px-Tailwind_CSS_logo.svg.png"
+                alt=""
+                class="h-9 w-30 bg-transparent ml-5"
+              />
+            </div>
+          </div>
+          <div class="bg-transparent">
+            <img
+              src="https://shorttermrentalz.com/wp-content/uploads/2018/12/Airbnb-adds-new-hotel-category-and-filter-to-push-visibility-on-its-website-800x400.png"
+              alt=""
+              class="bg-transparent rounded-md ml-10 w-[480px] h-[270px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center mt-10">
+        <div class="neu-proj p-5 flex flex-row h-[100%]">
+          <div class="flex-1 bg-transparent text-gray-800">
+            <h1 class="bg-transparent text-4xl font-semibold mb-5">
+              Blog Page
+            </h1>
+            <p class="bg-transparent text-lg">
+              This is a blog page that I made using Next.js and Tailwind CSS. I
+              dont use this blog page for personal use but it rather is just a
+              project to show off my skills to the world 🚀. This blog page has
+              backend built with sanity CMS which provides templates for blog
+              pages, pretty cool huh?
+            </p>
+            <div class="flex flex-row bg-transparent mt-10">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+                alt=""
+                class="h-14 w-20 bg-transparent"
+              />
+              <img
+                src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_96102ac6497377cd53da621075fe828e/sanity.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-7"
+              />
+              <img
+                src="https://typescript-react-graphql.herokuapp.com/static/media/typeS.5c70a1d2.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-5"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/1280px-Tailwind_CSS_logo.svg.png"
+                alt=""
+                class="h-9 w-30 bg-transparent ml-5"
+              />
+            </div>
+          </div>
+          <div class="bg-transparent">
+            <img
+              src="https://media.discordapp.net/attachments/804196955202387998/1007944920805412924/unknown.png?width=1246&height=628"
+              alt=""
+              class="bg-transparent rounded-md ml-10 w-[480px] h-[270px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center mt-10">
+        <div class="neu-proj p-5 flex flex-row h-[100%]">
+          <div class="flex-1 bg-transparent text-gray-800">
+            <h1 class="bg-transparent text-4xl font-semibold mb-5">
+              Discord Bot
+            </h1>
+            <p class="bg-transparent text-lg">
+              Discord Bot made with the discord api and discord.py using Python.
+              It has all the amazingly cool features like currency and fun
+              etc... Could have replaced many well known bots someday.. Please
+              continue if you all can all the best.
+            </p>
+            <div class="flex flex-row bg-transparent mt-10">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+                alt=""
+                class="h-14 w-14 bg-transparent"
+              />
+              <img
+                src="https://techcrunch.com/wp-content/uploads/2019/06/MongoDB_Logo_FullColorBlack_RGB.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-7"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png"
+                alt=""
+                class="h-14 w-30 bg-transparent ml-5"
+              />
+
+              <img
+                src="https://abhigyantrips.gallerycdn.vsassets.io/extensions/abhigyantrips/disnake-code-snippets/1.2.1/1646562811235/Microsoft.VisualStudio.Services.Icons.Default"
+                alt=""
+                class="h-14 w-14 bg-transparent ml-5"
+              />
+            </div>
+          </div>
+          <div class="bg-transparent">
+            <img
+              src="https://itechhacks.com/wp-content/uploads/2020/03/best-discord-bots.jpg"
+              alt=""
+              class="bg-transparent rounded-md ml-10 w-[480px] h-[270px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="circle" class="circle"></div>
+  </body>
+</html>
