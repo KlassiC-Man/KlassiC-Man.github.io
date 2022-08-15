@@ -123,6 +123,7 @@
   border: 1px solid rgba(209, 213, 219, 0.3);
   width: 70%;
   height: 50px;
+  box-shadow: 41px 41px 82px #080a09, -41px -41px 82px #222625;
 }
 
 @keyframes shine {
@@ -132,4 +133,9 @@
   to {
     -webkit-mask-position: -50%;
   }
+}
+.lang {
+  border-radius: 20px;
+  background: #151817;
+  box-shadow: 41px 41px 82px #080a09, -41px -41px 82px #222625;
 }
