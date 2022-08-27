@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth's Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://pbs.twimg.com/profile_images/1499455922908778501/2biNaK3m_400x400.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let circle = document.querySelector(".circle");
+        const onMouseMove = (e) => {
+          circle.style.left = e.pageX + "px";
+          circle.style.top = e.pageY + "px";
+        };
+        document.addEventListener("mousemove", onMouseMove);
+      });
+    </script>
+  </head>
+  <body>
+    <section class="top-section">
+      <div class="pic-n-name">
+        <div class="pic-n-name-inside">
+          <img
+            src="https://pbs.twimg.com/profile_images/1499455922908778501/2biNaK3m_400x400.jpg"
+            class="img-pfp"
+            alt=""
+          />
+          <h1 class="hi-my-name-is">HI, MY NAME IS</h1>
+          <h1 class="head-grad">Parth Gulati.</h1>
+          <h1 class="head-grad">I am a full-stack dev.</h1>
+        </div>
+      </div>
+      <div class="description-1">
+        <div class="description-2">
+          <h3 class="description">
+            I love to build fabulous UI/UX's and also solve arithmetic and
+            logical problems 👨‍💻. I also like to eat Pancakes and yeah that's
+            pretty much everything...
+          </h3>
+        </div>
+      </div>
+      <div class="bt-out">
+        <div class="btn">Want To Know More?</div>
+      </div>
+      <div class="icons-out">
+        <div class="icons-in">
+          <a href="https://twitter.com/programmer010">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://dev.to/nothingbutsyntaxerror">
+            <i class="fa-brands fa-dev"></i>
+          </a>
+          <a href="https://github.com/nothingbutsyntaxerror">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:parthglt@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://discord.com/users/716323270982631476">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <img src="./layered-waves-haikei.svg" alt="" class="layer-1" />
+    <div class="circle"></div>
+  </body>
+</html>

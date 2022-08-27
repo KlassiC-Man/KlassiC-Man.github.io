@@ -82,6 +82,7 @@
 }
 .box ul li:after {
   transform: rotate(35deg);
+  transform: translateZ(0);
 }
 .box ul li:nth-child(2) {
   left: 36vw;
@@ -126,14 +127,14 @@
   box-shadow: 41px 41px 82px #080a09, -41px -41px 82px #222625;
 }
 
-@keyframes shine {
+/* @keyframes shine {
   from {
     -webkit-mask-position: 150%;
   }
   to {
     -webkit-mask-position: -50%;
   }
-}
+} */
 .lang {
   border-radius: 20px;
   background: #151817;
